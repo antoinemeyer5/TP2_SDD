@@ -14,7 +14,7 @@ typedef struct pile
 {
     int taille;
     int sommet;
-    elt_t * tetepile;
+    elt_t *tetepile;
 } pile_t;
 
 /*
@@ -32,12 +32,13 @@ pile_t init_pile(int);
 void afficher_pile(pile_t);
 void empiler_pile(pile_t *, elt_t);
 int est_vide_pile(pile_t);
-//depiler
-//sommet
-//liberer
+void depiler_pile(pile_t *);
+elt_t depiler_avec_retour_pile(pile_t *);
+// sommet
+// liberer
 
 /*
 FILE
 */
 
-//TODO
+// TODO
