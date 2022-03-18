@@ -77,6 +77,11 @@ elt_t depiler_avec_retour_pile(pile_t *pile)
     return element;
 }
 
+elt_t sommet_pile(pile_t pile)
+{
+    return pile.tetepile[pile.sommet];
+}
+
 /*
 FILE
 */

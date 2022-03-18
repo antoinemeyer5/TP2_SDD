@@ -30,5 +30,8 @@ int main()
 
     // antoine = depiler_avec_retour_pile(&pile);
 
+    // antoine = sommet_pile(pile);
+    
+
     return 0;
 }
