@@ -9,6 +9,8 @@ int main()
 
     pile_t pile;
 
+    int vide = 0;
+
     pile = init_pile(15);
 
     init_element(&antoine, 22, "Antoine");
@@ -18,8 +20,12 @@ int main()
     empiler_pile(&pile, antoine);
     empiler_pile(&pile, julie);
     empiler_pile(&pile, fahd);
-
+    
     afficher_pile(pile);
+
+    /*vide = est_vide_pile(pile);
+    printf("Pile vide ? : %d\n", vide);*/
+
 
     return 0;
 }

@@ -3,6 +3,7 @@
 /*
 STRUCTURE
 */
+
 typedef struct elt
 {
     int age;
@@ -19,12 +20,24 @@ typedef struct pile
 /*
 ELEMENT
 */
+
 void afficher_element(elt_t);
 void init_element(elt_t *, int, char[]);
 
 /*
 PILE
 */
+
 pile_t init_pile(int);
 void afficher_pile(pile_t);
 void empiler_pile(pile_t *, elt_t);
+int est_vide_pile(pile_t);
+//depiler
+//sommet
+//liberer
+
+/*
+FILE
+*/
+
+//TODO

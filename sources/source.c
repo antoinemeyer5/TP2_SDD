@@ -28,6 +28,10 @@ pile_t init_pile(int taille)
     pile.taille = taille;
     pile.sommet = -1;
     pile.tetepile = malloc(taille*sizeof(elt_t));
+    if (pile.tetepile == NULL) {
+        free(pile.tetepile);
+        pile.tetepile = NULL;
+    }
     return pile;
 }
 
@@ -50,3 +54,16 @@ void empiler_pile(pile_t * pile, elt_t element)
     pile->sommet = pile->sommet + 1;
     pile->tetepile[pile->sommet] = element;        
 }
+
+int est_vide_pile(pile_t pile)
+{
+    return (pile.sommet == -1); // Si vide 1, sinon 0
+}
+
+
+
+/*
+FILE
+*/
+
+//TODO
