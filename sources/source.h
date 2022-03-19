@@ -17,6 +17,14 @@ typedef struct pile
     elt_t *tetepile;
 } pile_t;
 
+typedef struct file
+{
+    int taille_max;
+    int nb;
+    int deb;
+    int fin;
+    int *base;
+} file_t;
 
 /*
 ELEMENT
@@ -42,4 +50,10 @@ void liberer_pile(pile_t *);
 FILE
 */
 
-// TODO
+file_t init_file(int);
+void afficher_file(file_t);
+void entree_file(file_t *, int);
+void sortie_file(file_t *);
+int est_vide_file(file_t);
+int est_pleine_file(file_t);
+void liberer_file(file_t *);
