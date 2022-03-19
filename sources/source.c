@@ -82,6 +82,16 @@ elt_t sommet_pile(pile_t pile)
     return pile.tetepile[pile.sommet];
 }
 
+void liberer_pile(pile_t *pile)
+{
+    while (pile->sommet != -1)
+    {
+        free(pile->tetepile);
+        pile->tetepile = NULL;
+        pile->sommet = pile->sommet - 1;
+    }
+}
+
 /*
 FILE
 */

@@ -32,6 +32,8 @@ int main()
 
     // antoine = sommet_pile(pile);
     
+    liberer_pile(&pile);
+    afficher_pile(pile);
 
     return 0;
 }
