@@ -17,6 +17,7 @@ typedef struct pile
     elt_t *tetepile;
 } pile_t;
 
+
 /*
 ELEMENT
 */
