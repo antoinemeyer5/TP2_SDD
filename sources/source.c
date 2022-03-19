@@ -62,7 +62,7 @@ void empiler_pile(pile_t *pile, elt_t element)
 
 int est_vide_pile(pile_t pile)
 {
-    return (pile.sommet == -1); // Si vide 1, sinon 0
+    return (pile.sommet == -1); // si vide 1, sinon 0
 }
 
 void depiler_pile(pile_t *pile)

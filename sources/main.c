@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "source.h"
+#include "tests.h"
 
 int main()
 {
@@ -8,8 +9,6 @@ int main()
     elt_t fahd;
 
     pile_t pile;
-
-    int vide = 0;
 
     pile = init_pile(15);
 
@@ -23,7 +22,11 @@ int main()
 
     afficher_pile(pile);
 
-    /*vide = est_vide_pile(pile);
+    tous_les_tests();
+
+
+    /*int vide = 0;
+    vide = est_vide_pile(pile);
     printf("Pile vide ? : %d\n", vide);*/
 
     // depiler_pile(&pile);
@@ -32,8 +35,7 @@ int main()
 
     // antoine = sommet_pile(pile);
     
-    liberer_pile(&pile);
-    afficher_pile(pile);
+    // liberer_pile(&pile);
 
     return 0;
 }
