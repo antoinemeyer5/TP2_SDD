@@ -12,12 +12,11 @@ PILE
 
 int test_init_pile();
 int test_empiler_pile();
-/*int est_vide_pile(pile_t);
-void depiler_pile(pile_t *);
-elt_t depiler_avec_retour_pile(pile_t *);
-elt_t sommet_pile(pile_t);
-void liberer_pile(pile_t *);*/
-
+int test_est_vide_pile();
+int test_depiler_pile();
+int test_depiler_avec_retour_pile();
+int test_sommet_pile();
+int test_liberer_pile();
 
 /*
 FILE

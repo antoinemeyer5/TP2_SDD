@@ -59,6 +59,31 @@ int test_empiler_pile()
     return retour;
 }
 
+int test_est_vide_pile()
+{
+    return 0;
+}
+
+int test_depiler_pile()
+{
+    return 0;
+}
+
+int test_depiler_avec_retour_pile()
+{
+    return 0;
+}
+
+int test_sommet_pile()
+{
+    return 0;
+}
+
+int test_liberer_pile()
+{
+    return 0;
+}
+
 /*
 GENERAL
 */
@@ -79,4 +104,19 @@ void tous_les_tests()
 
     retour_des_tests = test_empiler_pile();
     printf("-> empiler pile : %d\n", retour_des_tests);
+
+    retour_des_tests = test_est_vide_pile();
+    printf("-> est vide pile : %d\n", retour_des_tests);
+
+    retour_des_tests = test_depiler_pile();
+    printf("-> depiler pile : %d\n", retour_des_tests);
+
+    retour_des_tests = test_depiler_avec_retour_pile();
+    printf("-> depiler (avec retour) pile : %d\n", retour_des_tests);
+
+    retour_des_tests = test_sommet_pile();
+    printf("-> sommet pile : %d\n", retour_des_tests);
+
+    retour_des_tests = test_liberer_pile();
+    printf("-> liberer pile : %d\n", retour_des_tests);
 }
