@@ -30,13 +30,13 @@ int main()
     file = init_file(5);
     entree_file(&file, 4);
     entree_file(&file, 15);
+    entree_file(&file, -23);
     entree_file(&file, 502);
     sortie_file(&file);
-
     afficher_file(file);
-
-    printf("deb :%d; fin :%d\n", file.deb, file.fin);
-
+    printf("========\n");
+    liberer_file(&file);
+    afficher_file(file);
 
     return 0;
 }

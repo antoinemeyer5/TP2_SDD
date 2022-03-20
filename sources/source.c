@@ -183,4 +183,10 @@ int est_pleine_file(file_t file)
 
 void liberer_file(file_t *file)
 {
+    while (file->nb != 0)
+    {
+        free(file->base);
+        file->base = NULL;
+        file->nb = file->nb - 1;
+    }    
 }
