@@ -61,27 +61,72 @@ int test_empiler_pile()
 
 int test_est_vide_pile()
 {
-    return 0;
+    int retour = -1;
+    return retour;
 }
 
 int test_depiler_pile()
 {
-    return 0;
+    int retour = -1;
+    return retour;
 }
 
 int test_depiler_avec_retour_pile()
 {
-    return 0;
+    int retour = -1;
+    return retour;
 }
 
 int test_sommet_pile()
 {
-    return 0;
+    int retour = -1;
+    return retour;
 }
 
 int test_liberer_pile()
 {
-    return 0;
+    int retour = -1;
+    return retour;
+}
+
+/*
+FILE
+*/
+
+int test_init_file()
+{
+    int retour = -1;
+    return retour;
+}
+
+int test_entree_file()
+{
+    int retour = -1;
+    return retour;
+}
+
+int test_sortie_file()
+{
+    int retour = -1;
+    return retour;
+}
+
+int test_est_vide_file()
+{
+    int retour = -1;
+    return retour;
+}
+
+int test_est_pleine_file()
+{
+    int retour = -1;
+    return retour;
+}
+
+int test_liberer_file()
+{
+    int retour = -1;
+    return retour;
 }
 
 /*
@@ -94,13 +139,18 @@ void tous_les_tests()
     elt_t element_de_test;
     pile_t pile_de_test;
 
-    printf("\nPartie de tests : 1 = RAS, 0 = ERR\n");
+    printf("\nPartie de tests :\n");
+    printf("1 = RAS, 0 = ERR, -1 = todo\n");
 
-    retour_des_tests = test_init_pile();
-    printf("-> init pile : %d\n", retour_des_tests);
+    printf("Element :\n");
 
     retour_des_tests = test_init_element();
     printf("-> init element : %d\n", retour_des_tests);
+
+    printf("Pile :\n");
+
+    retour_des_tests = test_init_pile();
+    printf("-> init pile : %d\n", retour_des_tests);
 
     retour_des_tests = test_empiler_pile();
     printf("-> empiler pile : %d\n", retour_des_tests);
@@ -119,4 +169,26 @@ void tous_les_tests()
 
     retour_des_tests = test_liberer_pile();
     printf("-> liberer pile : %d\n", retour_des_tests);
+
+    printf("File :\n");
+
+    retour_des_tests = test_init_file();
+    printf("-> init file : %d\n", retour_des_tests);
+
+    retour_des_tests = test_entree_file();
+    printf("-> entree file : %d\n", retour_des_tests);
+
+    retour_des_tests = test_sortie_file();
+    printf("-> sortie file : %d\n", retour_des_tests);
+
+    retour_des_tests = test_est_vide_file();
+    printf("-> est vide file : %d\n", retour_des_tests);
+
+    retour_des_tests = test_est_pleine_file();
+    printf("-> est pleine file : %d\n", retour_des_tests);
+
+    retour_des_tests = test_liberer_file();
+    printf("-> liberer file : %d\n", retour_des_tests);
+
+    printf("Fin des tests.\n");
 }

@@ -38,5 +38,10 @@ int main()
     liberer_file(&file);
     afficher_file(file);
 
+    //tester le bon fonctionnement de ces deux structures,
+    // écrire le programme d’inversion d’une pile d’entiers.
+
+    
+
     return 0;
 }
