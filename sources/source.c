@@ -92,6 +92,18 @@ void liberer_pile(pile_t *pile)
     }
 }
 
+pile_t inversion_pile(pile_t pile)
+{
+    int i = 0;
+    pile_t pile_inv;
+    pile_inv = init_pile(pile.sommet);
+    for (i = pile.sommet; i >= 0; i--)
+    {
+        empiler_pile(&pile_inv, depiler_avec_retour_pile(&pile));
+    }
+    return pile_inv;
+}
+
 /*
 FILE
 */

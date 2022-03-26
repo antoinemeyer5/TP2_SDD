@@ -89,6 +89,15 @@ int test_liberer_pile()
     return retour;
 }
 
+int test_inversion_pile()
+{
+    int retour = -1;
+    /*afficher_pile(pile);
+    pile_inv = inversion_pile(pile);
+    afficher_pile(pile_inv);*/
+    return retour;
+}
+
 /*
 FILE
 */
@@ -169,6 +178,9 @@ void tous_les_tests()
 
     retour_des_tests = test_liberer_pile();
     printf("-> liberer pile : %d\n", retour_des_tests);
+
+    retour_des_tests = test_inversion_pile();
+    printf("-> inversion pile : %d\n", retour_des_tests);
 
     printf("File :\n");
 
